@@ -2,20 +2,9 @@
 ====================
 windowsの環境構築
 
-## 手順
+## インストール
+setup/setup.bat を実行する
 
-### 1 インストール
-* Chefダウンロード用：download-chef-client.url
-* Gitダウンロード用：download-git.url
-
-コマンドプロンプトで下記のようにしてサイレントインストール
-
-    msiexec /i [ファイル名] /passive
-
-### 2 cookbook準備
-以下のcookbookをchef-repo/cookbooksへ
-* https://github.com/opscode-cookbooks/windows.git
-* https://github.com/opscode-cookbooks/chef_handler.git
-
-### 3 recipe作成
-作成中...
+## TODO
+* インストール済みのチェックを追加
+* vagrantの設定作成

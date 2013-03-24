@@ -1,4 +1,5 @@
 @echo off
+pushd %~dp0
 
 call util.bat log "Start setup."
 
@@ -19,4 +20,6 @@ call package.bat virtualbox
 
 
 call util.bat log "Complete setup."
+
+popd
 pause

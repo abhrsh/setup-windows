@@ -1,7 +1,10 @@
 @echo off
+pushd %~dp0
 if "%DOWNLOAD_DIR%"=="" set DOWNLOAD_DIR=downloads
 
 if not "%~1"=="" call :%~1
+
+popd
 goto :EOF
 
 :powershell
@@ -58,20 +61,20 @@ exit /b
 	call C:\Chocolatey\bin\cinst virtualbox
 exit /b
 
-:gow
-	call util.bat log "Installing Gow."
-	set FILE_NAME=Gow-0.7.0.exe
-	set URL=https://github.com/downloads/bmatzelle/gow/%FILE_NAME%
-	set FILE=%DOWNLOAD_DIR%\%FILE_NAME%
-
-	call util.bat download "%URL%" "%FILE%"
-	start %FILE%
+:virtualbox
+	call util.bat log "Installing VirtualBox."
+	call C:\Chocolatey\bin\cinst virtualbox
 exit /b
 
 :git
 	call util.bat log "Installing Git."
-	set FILE_NAME=Git-1.8.1.2-preview20130201.exe
-	set URL=https://msysgit.googlecode.com/files/%FILE_NAME%
+	call C:\Chocolatey\bin\cinst git.commandline
+exit /b
+
+:gow
+	call util.bat log "Installing Gow."
+	set FILE_NAME=Gow-0.7.0.exe
+	set URL=https://github.com/downloads/bmatzelle/gow/%FILE_NAME%
 	set FILE=%DOWNLOAD_DIR%\%FILE_NAME%
 
 	call util.bat download "%URL%" "%FILE%"

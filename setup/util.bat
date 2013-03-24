@@ -1,7 +1,10 @@
 @echo off
+pushd %~dp0
 if "%LOG%"=="" set LOG=setup.log
 
 if not "%~1"=="" call :%~1 "%~2" "%~3"
+
+popd
 goto :EOF
 
 :download
