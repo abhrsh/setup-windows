@@ -1,4 +1,6 @@
 chef-repo/Berksfile.lock
 chef-repo/cookbooks
 chef-repo/cache
-setup/download
+setup/downloads
+
+*.log
