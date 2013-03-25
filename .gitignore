@@ -3,4 +3,5 @@ chef-repo/cookbooks
 chef-repo/cache
 setup/downloads
 
+.vagrant
 *.log
