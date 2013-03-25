@@ -24,51 +24,52 @@ eexit /b
 :chocolatey
 	call util.bat log "Installing Chocolatey."
 	powershell -NoProfile -ExecutionPolicy unrestricted  -Command "iex((new-object net.webclient).DownloadString('http://chocolatey.org/install.ps1'))"
+	set PATH=%PATH%;C:\Chocolatey\bin
 exit /b
 
 :chrome
 	call util.bat log "Installing GoogleChrome."
-	call C:\Chocolatey\bin\cinst GoogleChrome
+	call cinst GoogleChrome
 exit /b
 
 :sublimetext
 	call util.bat log "Installing SublimeText2."
-	call C:\Chocolatey\bin\cinst sublimetext2
+	call cinst sublimetext2
 exit /b
 
 :tortoisegit
 	call util.bat log "Installing TortoiseGit."
-	call C:\Chocolatey\bin\cinst tortoisegit
+	call cinst tortoisegit
 exit /b
 
 :tortoisesvn
 	call util.bat log "Installing TortoiseSVN."
-	call C:\Chocolatey\bin\cinst tortoisesvn
+	call cinst tortoisesvn
 exit /b
 
 :xmind
 	call util.bat log "Installing XMind."
-	call C:\Chocolatey\bin\cinst xmind
+	call cinst xmind
 exit /b
 
 :foxitreader
 	call util.bat log "Installing FoxitReader."
-	call C:\Chocolatey\bin\cinst FoxitReader
+	call cinst FoxitReader
 exit /b
 
 :virtualbox
 	call util.bat log "Installing VirtualBox."
-	call C:\Chocolatey\bin\cinst virtualbox
+	call cinst virtualbox
 exit /b
 
 :virtualbox
 	call util.bat log "Installing VirtualBox."
-	call C:\Chocolatey\bin\cinst virtualbox
+	call cinst virtualbox
 exit /b
 
 :git
 	call util.bat log "Installing Git."
-	call C:\Chocolatey\bin\cinst git.commandline
+	call cinst git.commandline
 exit /b
 
 :gow
