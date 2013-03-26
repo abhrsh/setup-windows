@@ -1,3 +1,5 @@
+gem knife-solo
+gem ffi
 vagrant up
 vagrant ssh-config --host base >> "%USERPROFILE%\.ssh\config"
 cd chef-repo
