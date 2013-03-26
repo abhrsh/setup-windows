@@ -106,3 +106,13 @@ exit /b
 	call util.bat download "%URL%" "%FILE%"
 	start msiexec /i "%FILE%" /passive
 exit /b
+
+:gnupack
+	call util.bat log "Installing gnupack."
+	set FILE_NAME=gnupack_basic-11.00.exe
+	set URL=http://sourceforge.jp/frs/redir.php?f=/gnupack/57726/gnupack_basic-11.00.exe
+	set FILE=%DOWNLOAD_DIR%\%FILE_NAME%
+
+	call util.bat download "%URL%" "%FILE%"
+	start "%FILE%"
+exit /b
