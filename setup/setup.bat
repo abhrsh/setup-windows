@@ -18,6 +18,7 @@ call package.bat ruby
 
 call package.bat vagrant
 call package.bat gow
+call package.bat gnupack
 
 call util.bat log "Complete setup."
 
