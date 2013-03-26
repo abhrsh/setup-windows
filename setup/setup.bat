@@ -14,6 +14,7 @@ call package.bat tortoisesvn
 call package.bat xmind
 call package.bat foxitreader
 call package.bat virtualbox
+call package.bat ruby
 
 call package.bat vagrant
 call package.bat gow

@@ -72,6 +72,11 @@ exit /b
 	call cinst git.commandline
 exit /b
 
+:ruby
+	call util.bat log "Installing Ruby."
+	call cinst ruby
+exit /b
+
 :gow
 	call util.bat log "Installing Gow."
 	set FILE_NAME=Gow-0.7.0.exe
