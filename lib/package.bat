@@ -114,5 +114,5 @@ exit /b
 	set FILE=%DOWNLOAD_DIR%\%FILE_NAME%
 
 	call util.bat download "%URL%" "%FILE%"
-	start "%FILE%"
+	start %FILE% -oC:\tools\gnupack
 exit /b

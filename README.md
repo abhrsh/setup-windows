@@ -1,10 +1,26 @@
 概要
 ====================
-windowsの環境構築
+windowsで各種ツールをインストール
+確認環境：Windows XP
 
-## インストール
-setup/setup.bat を実行する
+## 実行方法
+setup.bat を実行する
+
+## インストールするもの
+* PowerShell
+* Chocoratey
+* Git
+* GoogleChrome
+* SublimeText2
+* TortoiseGit
+* TortoiseSVN
+* XMind
+* FoxitReader
+* VirtualBox
+* Vagrant
+* GOW
+* gnupack
+
 
 ## TODO
 * インストール済みのチェックを追加
-* vagrantの設定作成

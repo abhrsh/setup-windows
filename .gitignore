@@ -1,7 +1,2 @@
-chef-repo/Berksfile.lock
-chef-repo/cookbooks
-chef-repo/cache
-setup/downloads
-
-.vagrant
+downloads
 *.log
