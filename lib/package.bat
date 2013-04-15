@@ -116,3 +116,13 @@ exit /b
 	call util.bat download "%URL%" "%FILE%"
 	start %FILE% -oC:\tools\gnupack
 exit /b
+
+:astah
+	call util.bat log "Installing astah-community."
+	set FILE_NAME=astah-community-6_7_0-43495-jre-setup.exe
+	set URL=http://members.change-vision.com/files/_P1Mee2LYaONL1Iwr2ZA2JCi7jII1x_Ry/astah_community/6_7_0/astah-community-6_7_0-43495-jre-setup.exe
+	set FILE=%DOWNLOAD_DIR%\%FILE_NAME%
+
+	call util.bat download "%URL%" "%FILE%"
+	start %FILE%
+exit /b

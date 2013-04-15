@@ -20,6 +20,7 @@ call lib\package.bat virtualbox
 call lib\package.bat vagrant
 call lib\package.bat gow
 call lib\package.bat gnupack
+call lib\package.bat astah
 
 call lib\util.bat log "Complete setup."
 
